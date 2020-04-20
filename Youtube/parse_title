@@ -1,0 +1,8 @@
+class title():
+    def parse_title(self, title):
+        self.title = title
+        self.fin_title = ''
+        for let in self.title:
+            if let not in '\/:*?"<>|':
+                self.fin_title += let
+        return self.fin_title
